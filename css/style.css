@@ -1,0 +1,140 @@
+body {
+    overflow-x: hidden;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #4391CE;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+	min-height:20px;
+	margin-top:20px;
+    padding: 0 20px 0 80px;
+    text-align: left;
+}
+
+.timeline>li .last { height:20px !important;}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+    border: 7px solid #4391CE;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #4391CE;
+}
+
+.timeline>li .timeline-image h4 {
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 80px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+	margin-bottom:0;
+}
+.timeline .timeline-heading ul {
+  list-style-type: none;
+  font-size:15px;
+  font-weight:300;
+  margin-top:8px;
+  margin-bottom:15px;
+}
+
+.timeline .timeline-heading ul li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -15px;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.timeline>h4 {
+  font-weight: bold;
+}
